@@ -42,7 +42,7 @@ public class LoginTestVerification extends BaseClass {
 		
 		String expectedTitle = " GTPL Bank Home32423 ";
 		
-		Thread.sleep(2000);
+		
 		
 		if(driver.getTitle().equals(expectedTitle)) 
 		{
@@ -54,7 +54,7 @@ public class LoginTestVerification extends BaseClass {
 		{
 			test.log(Status.FAIL, "Title Mismatch Case Failed ");
 		String screenshotpath = obj1.captureScreen();
-				
+			Thread.sleep(2000);	
 		test.addScreenCaptureFromPath(screenshotpath);
 		}
 	}}
