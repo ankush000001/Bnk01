@@ -36,14 +36,13 @@ public class LoginTestVerification extends BaseClass {
 		login.ClickOnLoginButton();
 		
 			test.log(Status.PASS, "Button clicked Sucessfully");
-		
-		
+		Thread.sleep(2000);		
 		
 		
 		
 		String expectedTitle = " GTPL Bank Home32423 ";
 		
-		Thread.sleep(4000);
+		Thread.sleep(2000);
 		
 		if(driver.getTitle().equals(expectedTitle)) 
 		{
